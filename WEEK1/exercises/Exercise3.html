@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Responsive Profile Card</title>
+</head>
+<body>
+
+    <!-- nav area-->
+<nav class="fixed top-0 w-full z-50 bg-white border-b flex items-center justify-between px-6 h-16">
+    <img src="/logo.jpg" alt="Logo" class="h-10">
+    <div class="hidden sm:flex gap-4">
+        <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+    </div>
+</nav>
+
+<br>
+
+<!-- Profile card -->
+<div class="max-w-sm mx-auto mt-24 bg-white rounded-xl shadow-lg border hover:shadow-2xl transform hover:-translate-y-1 transition">
+    <div class="flex flex-col items-center p-6">
+        <img class="rounded-full w-24 h-24 object-cover" src="/myself.jpg" alt="Profile Picture"> 
+        <h1 class="mt-4 text-xl font-bold text-gray-800">Mohammed Haruna</h1>
+        <h3 class="text-gray-500">Web Developer</h3>
+    </div>
+</div>
+
+<br>
+
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="h-48 overflow-hidden">
+            <img  src="/dog1.jpg" class="w-full h-full object-cover hover:scale-105 transition-transform">
+        </div>
+
+        <div class="h-48 overflow-hidden">
+            <img src="/image123.jpg" class="w-full h-full object-cover hover:scale-105 transition-transform">
+        </div>
+
+
+        <div class="h-48 overflow-hidden">
+            <img src="/image1234.jpg" class="w-full h-full object-cover hover:scale-105 transition-transform">
+        </div>
+    </div>
+</body>
+</html>

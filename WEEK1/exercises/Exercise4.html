@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Responsive Profile Card</title>
+</head>
+<body>
+
+    <!-- nav area-->
+<nav class="fixed top-0 w-full z-50 bg-white border-b flex items-center justify-between px-6 h-16">
+    <img src="/logo.jpg" alt="Logo" class="h-10">
+    <div class="hidden sm:flex gap-4">
+        <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+    </div>
+</nav>
+<br>
+
+<br><br>
+<nav class="fixed top-0 w-full z-50 bg-white border-b shadow-sm flex items-center justify-between px-6 h-16">
+  <!-- Logo -->
+  <img src="/logo.jpg" alt="Logo" class="h-10">
+
+  <!-- Links -->
+  <div class="hidden sm:flex gap-6">
+    <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+    <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+    <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+  </div>
+
+  <!-- Avatar -->
+  <img src="/myself.jpg" alt="Profile" class="h-10 w-10 rounded-full object-cover">
+</nav>
+<br><br>
+
+
+
+<!-- Profile card -->
+<div class="max-w-sm mx-auto mt-24 bg-white rounded-xl shadow-lg border hover:shadow-2xl transform hover:-translate-y-1 transition">
+    <div class="flex flex-col items-center p-6">
+        <img class="rounded-full w-24 h-24 object-cover" src="/myself.jpg" alt="Profile Picture"> 
+        <h1 class="mt-4 text-xl font-bold text-gray-800">Mohammed Haruna</h1>
+        <h3 class="text-gray-500">Web Developer</h3>
+    </div>
+</div>
+
+<br><br>
+
+
+<div class="h-screen bg-[url('/image1234')] bg-cover bg-center relative">
+   <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/0"></div>
+
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
+        <h1 class="text-xl md:text-6xl font-bold">Welcome </h1>
+        <p class="mt-4 text-lg md:text-2xl">This is my Hero section</p>
+        <button class="mt-6 bg-white/10 backdrop-blurpx-6 py-3 rounded-lg hover:bg-white/20 transition">Click Here to Explore</button>
+        
+    
+   </div>
+</div>
+<br><br>
+
+
+<div class="grid  gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ">
+    <h1 class="bg-gradient-to-r from-indigo-500 to-pink-500 rounded-2xl border p-4 text-white text-center">My first Project</h1>
+    <h1 class="bg-gradient-to-l from-emerald-500 to-teal-300 text-white text-center font-bold rounded-2xl border p-4">My Second Project</h1>
+    <h1 class="bg-gradient-to-tr from-yellow-400 to-red-500 rounded-2xl border p-4 text-white text-center">My Third Project</h1>
+</div>
+
+
+<br><br>
+
+<!-- exercise 3 -->
+
+<div class="bg-gradient-to-r from-purple-500 to-pink-400 p-[2px] rounded-2xl max-w-sm mx-auto">
+  <div class="bg-white rounded-xl overflow-hidden">
+    <!-- Image -->
+    <img src="/myself.jpg" alt="Profile picture" class="w-full h-88 object-cover">
+
+    <!-- Content -->
+    <div class="p-6 text-center">
+      <h1 class="text-2xl font-bold text-gray-800">Haruna Mohammed</h1>
+      <p class="text-gray-500">Software Developer</p>
+    </div>
+  </div>
+</div>
+<br><br>
+
+
+
+<br>
+<!-- relative z-10 text-center text-white -->
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="h-48 overflow-hidden">
+            <img  src="/dog1.jpg" class="w-full h-full object-cover hover:scale-105 transition-transform">
+        </div>
+
+        <div class="h-48 overflow-hidden">
+            <img src="/image123.jpg" class="w-full h-full object-cover hover:scale-105 transition-transform">
+        </div>
+
+
+        <div class="h-48 overflow-hidden">
+            <img src="/image1234.jpg" class="w-full h-full object-cover hover:scale-105 transition-transform">
+        </div>
+    </div> 
+
+
+    <!--Typography Exercise  -->
+
+
+<div class="p-6 bg-gray-100">
+  <h1 class="text-4xl font-bold text-center text-indigo-600">Haruna Mohammed</h1>
+  <h2 class="mt-2 text-md text-gray-500 text-center tracking-wide">Software Developer</h2>
+  <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+    I am an aspiring Software Developer.
+  </p>
+  <p class="mt-2 text-sm text-gray-500 italic underline tracking-wide">
+    "Bugs are there to show you how to code"
+  </p>
+</div>
+<br><br>
+
+
+<!--  Text Indent-->
+<p class="indent-8">
+  This paragraph starts with an indentation.
+</p>
+
+
+<p class="text-red-500/80">Here the text semi-transparent red</p>
+<br><br>
+
+<!-- different font types -->
+<p class="font-sans">This is sans-serif text</p>
+<p class="font-serif">This is serif text</p>
+<p class="font-mono">This is monospace text</p>
+
+<br><br>
+
+<!--xercise 2 for Typography  -->
+<div>
+    <h1 class="uppercase font-bold text-4xl">Haruna Mohammed</h1>
+    <h2 class="italic font-serif">Software Developer</h2>
+    <p class="truncate w-64">I have a lot of code to learn and practice every day to get better at Tailwind and development.</p>
+</div>
+<br><br>
+
+<div>
+    <h1 class="text-center font-bold text-4xl font-black">Haruna Mohammed</h1>
+    <p class="text-center mt-2">Software Developer</p>
+    <p class="indent-8 underline decoration-blue-500">“Learning never stops, keep building and coding every day.”</p>
+</div>
+<br><br>
+
+<!--  Spacing Practice-->
+
+<div class="bg-white shadow-2xl rounded-xl border w-[30rem] p-6 shadow-indigo-500/50">
+  <h1 class="text-4xl font-bold mb-4">Haruna Mohammed</h1>
+  <p class="text-2xl text-gray-500 mb-2">Software Developer</p>
+  <p class="text-gray-700 leading-relaxed">
+    I have a lot of code to learn and practice every day to get better at Tailwind and development.
+  </p>
+</div>
+<br><br>
+
+<div class="p-6 bg-white rounded-xl shadow-lg">
+  <h1 class="text-xl font-bold">Shadows Example</h1>
+  <p class="text-gray-600">This card has a large shadow around it.</p>
+</div>
+<br><br>
+
+<div class="grid grid-cols-3 gap-6 p-6">
+  <!-- Card 1 -->
+  <div class="bg-white shadow-sm opacity-50 p-6 rounded-xl">
+    Card 1
+  </div>
+
+  <!-- Card 2 -->
+  <div class="bg-white shadow-xl hover:shadow-2xl transition p-6 rounded-xl">
+    Card 2
+  </div>
+
+  <!-- Card 3 -->
+  <div class="bg-white/30 shadow-lg backdrop-blur p-6 rounded-xl">
+    Card 3
+  </div>
+</div>
+
+
+</body>
+</html>

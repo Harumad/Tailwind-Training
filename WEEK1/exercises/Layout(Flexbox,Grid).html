@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Layouts</title>
+</head>
+<body>
+
+    <!-- here we did flex row -->
+<div class="flex flex-row gap-4">
+    <div class="bg-red-300 p-4">Item 1</div>
+    <div class="bg-green-300 p-4">Item 2</div>
+    <div class="bg-blue-300 p-4">Item 3</div>
+</div> 
+<br><br>
+<!-- this is flex col -->
+<div class="flex flex-col gap-4">
+    <div class="bg-red-300 p-4">Item 1</div>
+    <div class="bg-green-300 p-4">Item 2</div>
+    <div class="bg-blue-300 p-4">Item 3</div>
+</div> 
+<br><br>
+
+<!-- How alignment of items is done -->
+ <div class="flex justify-center items-center h-40 bg-gray-200">
+    <div class="bg-blue-500 text-white p-4">Centered Box</div>
+ </div>
+<br><br>
+
+
+ <!-- Grid is also for arranging items in another style -->
+<div class="grid grid-cols-3 gap-4">
+    <div class="bg-red-300 p-4">1</div>
+    <div class="bg-green-300 p-4">2</div>
+    <div class="bg-yellow-300 p-4">3</div>
+</div>
+<br><br>
+
+
+<!-- controlling how the grid span -->
+ <div class="grid grid-cols-3 gap-4">
+    <div class="col-span-2 bg-yellow-300 p-4">Take1</div>
+    <div class="bg-purple-300 p-4">Take2</div>
+ </div>
+</body>
+</html>
