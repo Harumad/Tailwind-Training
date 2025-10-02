@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <!-- Basic input field -->
+    <input 
+  type="text" 
+  placeholder="Enter your name"
+  class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+<br><br>
+
+<!-- Email Input -->
+ <input 
+  type="email" 
+  placeholder="Enter your email"
+  class="border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-green-500"/>
+<br><br>
+
+<!-- Textarea -->
+ <textarea 
+  placeholder="Write your message here..." 
+  class="border border-gray-300 rounded px-4 py-2 w-150 h-32 focus:ring-2 focus:ring-purple-500">
+</textarea>
+
+<br><br>
+<!-- selection Dropdown -->
+<select class="border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-indigo-500">
+  <option>Frontend</option>
+  <option>Backend</option>
+  <option>Fullstack</option>
+</select>
+<br><br>
+
+<!-- Box with margin & padding -->
+<div class="bg-blue-200 m-6 p-4">
+  Box with margin & padding
+</div>
+
+<br><br>
+<!-- Width & Height -->
+<div class="bg-green-300 w-32 h-16">
+  Fixed box
+</div>
+<br><br>
+
+<!--Max-Width / Max-Height  -->
+<div class="bg-yellow-200 max-w-sm p-4">
+  This text won’t stretch too wide.
+</div>
+
+
+
+<br><br>
+<div class="max-w-sm mx-auto bg-white border rounded-xl shadow-lg p-6">
+  <img src="/profile.jpg" alt="Profile" class="w-24 h-24 rounded-full mx-auto">
+  
+  <h2 class="mt-4 text-xl font-bold text-center text-gray-800">Haruna Mohammed</h2>
+  <p class="text-center text-gray-500">Software Developer</p>
+  
+  <p class="mt-3 text-gray-600 text-sm leading-relaxed">
+    Passionate about learning, building, and solving real-world problems with code.
+  </p>
+  
+  <div class="mt-4 flex justify-center gap-3">
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+      Follow
+    </button>
+    <button class="border border-gray-400 px-4 py-2 rounded-lg hover:bg-gray-100">
+      Message
+    </button>
+  </div>
+</div>
+<br><br>
+
+<div class="max-w-sm mx-auto bg-white border rounded-xl shadow-lg p-6">
+  <!-- Profile Image -->
+  <img src="/myself.jpg" alt="Profile" class="w-24 h-24 rounded-full mx-auto">
+
+  <!-- Name & Title -->
+  <h2 class="mt-4 text-xl font-bold text-center text-gray-800">Haruna Mohammed</h2>
+  <p class="text-center text-gray-500">Software Developer</p>
+
+  <!-- Bio -->
+  <p class="mt-3 text-gray-600 text-sm leading-relaxed">
+    Passionate about learning, building, and solving real-world problems with code.
+  </p>
+
+  <!-- Action Buttons -->
+  <div class="mt-4 flex justify-center gap-3">
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+      Follow
+    </button>
+    <button class="border border-gray-400 px-4 py-2 rounded-lg hover:bg-gray-100">
+      Message
+    </button>
+  </div>
+</div>
+<br><br>
+
+
+
+<div class="max-w-sm mx-auto bg-white border rounded-xl shadow-lg overflow-hidden">
+  <!-- Header with Gradient -->
+  <div class="h-24 bg-gradient-to-r from-indigo-500 to-purple-500"></div>
+
+  <!-- Profile Image -->
+  <div class="flex justify-center -mt-12">
+    <img src="/myself.jpg" 
+         alt="Profile"
+         class="w-24 h-24 rounded-full border-4 border-white shadow-lg">
+  </div>
+
+
+  
+  <!-- Name & Title -->
+  <h2 class="mt-4 text-xl font-bold text-center text-gray-800">Haruna Mohammed</h2>
+  <p class="text-center text-gray-500">Software Developer</p>
+
+  <!-- Social Links -->
+  <div class="flex justify-center gap-4 mt-3">
+    <a href="#" class="text-blue-500 hover:text-blue-700">LinkedIn</a>
+    <a href="#" class="text-gray-700 hover:text-black">GitHub</a>
+  </div>
+</div>
+
+<br><br>
+<div class="max-w-sm mx-auto bg-white border rounded-xl shadow-lg p-6">
+  <!-- Profile Image -->
+  <img src="/myself.jpg" alt="Profile" class="w-20 h-20 rounded-full mx-auto">
+
+  <!-- Name & Title -->
+  <h2 class="mt-4 text-xl font-bold text-center text-gray-800">Haruna Mohammed</h2>
+  <p class="text-center text-gray-500">Software Developer</p>
+
+  <!-- Stats -->
+  <div class="grid grid-cols-3 gap-4 mt-4 text-center">
+    <div>
+      <p class="text-lg font-bold text-gray-800">120</p>
+      <p class="text-sm text-gray-500">Projects</p>
+    </div>
+    <div>
+      <p class="text-lg font-bold text-gray-800">5K</p>
+      <p class="text-sm text-gray-500">Followers</p>
+    </div>
+    <div>
+      <p class="text-lg font-bold text-gray-800">300</p>
+      <p class="text-sm text-gray-500">Following</p>
+    </div>
+  </div>
+</div>
+</div>
+<br><br>
+
+<!-- Profile Card with Gradient Header -->
+
+<div class="max-w-sm mx-auto bg-white border rounded-xl shadow-lg overflow-hidden">
+  <!-- Header with Gradient -->
+  <div class="h-24 bg-gradient-to-r from-indigo-500 to-purple-500"></div>
+
+  <!-- Profile Image -->
+  <div class="flex justify-center -mt-12">
+    <img src="/myself.jpg" 
+         alt="Profile"
+         class="w-24 h-24 rounded-full border-4 border-white shadow-lg">
+  </div>
+
+  <!-- Name & Title -->
+  <h2 class="mt-4 text-xl font-bold text-center text-gray-800">Haruna Mohammed</h2>
+  <p class="text-center text-gray-500">Software Developer</p>
+
+  <!-- Social Links -->
+  <div class="flex justify-center gap-4 mt-3">
+    <a href="#" class="text-blue-500 hover:text-blue-700">LinkedIn</a>
+    <a href="#" class="text-gray-700 hover:text-black">GitHub</a>
+  </div>
+</div>
+
+<br><br>
+
+<div class="max-w-sm mx-auto bg-white border rounded-xl shadow-lg p-6">
+  <!-- Profile Image -->
+  <img src="/myself.jpg" alt="Profile" class="w-20 h-20 rounded-full mx-auto">
+
+  <!-- Name & Title -->
+  <h2 class="mt-4 text-xl font-bold text-center text-gray-800">Haruna Mohammed</h2>
+  <p class="text-center text-gray-500">Software Developer</p>
+
+  <!-- Stats -->
+  <div class="grid grid-cols-3 gap-4 mt-4 text-center">
+    <div>
+      <p class="text-lg font-bold text-gray-800">120</p>
+      <p class="text-sm text-gray-500">Projects</p>
+    </div>
+    <div>
+      <p class="text-lg font-bold text-gray-800">5K</p>
+      <p class="text-sm text-gray-500">Followers</p>
+    </div>
+    <div>
+      <p class="text-lg font-bold text-gray-800">300</p>
+      <p class="text-sm text-gray-500">Following</p>
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+
+<div class="max-w-sm mx-auto bg-white border rounded-xl shadow-lg overflow-hidden">
+  <!-- Gradient header -->
+  <div class="h-24 bg-gradient-to-r from-indigo-500 to-purple-500"></div>
+
+  <!-- Profile image -->
+  <div class="flex justify-center -mt-12">
+    <img src="https://via.placeholder.com/100"
+         alt="Profile"
+         class="w-24 h-24 rounded-full border-4 border-white shadow-lg">
+  </div>
+
+  <!-- Name & role -->
+  <h2 class="mt-4 text-xl font-bold text-center text-gray-800">Haruna Mohammed</h2>
+  <p class="text-center text-gray-500">Software Developer</p>
+
+  <!-- Social links -->
+  <div class="flex justify-center gap-4 mt-3 mb-4">
+    <a href="#" class="text-blue-500 hover:text-blue-700">LinkedIn</a>
+    <a href="#" class="text-gray-700 hover:text-black">GitHub</a>
+  </div>
+</div>
+<br><br><br>
+
+<div class="max-w-sm mx-auto bg-white border rounded-xl shadow-lg overflow-hidden">
+  <!-- Image -->
+  <img src="/myself.jpg"
+       alt="Project image"
+       class="w-full h-88 object-cover">
+
+  <!-- Text -->
+  <div class="p-4">
+    <h2 class="text-lg font-bold text-gray-800">My First Project</h2>
+    <p class="text-sm text-gray-600 mt-2">
+      This is a short description of my project. It showcases how I used Tailwind CSS to build modern UIs.
+    </p>
+  </div>
+
+  <!-- Button -->
+  <div class="px-4 pb-5">
+    <button class="w-full bg-indigo-500 text-white py-2 px-4 rounded-lg hover:bg-indigo-600 transition">
+      View Project
+    </button>
+  </div>
+</div>
+
+<br><br><br>
+<div class="max-w-sm mx-auto bg-white border rounded-xl shadow-lg overflow-hidden">
+  <!-- Title & Price -->
+  <div class="p-6 text-center">
+    <h2 class="text-2xl font-bold text-gray-800">Basic Plan</h2>
+    <p class="mt-2 text-3xl font-extrabold text-indigo-600">$19 <span class="text-base font-normal text-gray-500">/mo</span></p>
+  </div>
+
+  <!-- Features -->
+  <ul class="px-6 space-y-2 text-gray-600">
+    <li>✔️ 5 Projects</li>
+    <li>✔️ Basic Support</li>
+    <li>✔️ Access to community</li>
+  </ul>
+
+  <!-- Button -->
+  <div class="p-6">
+    <button class="w-full bg-indigo-500 text-white py-2 px-4 rounded-lg hover:bg-indigo-600 transition">
+      Get Started
+    </button>
+  </div>
+</div>
+
+<br><br><br>
+<div class="max-w-sm mx-auto bg-white border rounded-xl shadow-lg overflow-hidden">
+  <!-- Image -->
+  <img src="/myself.jpg"
+       alt="Blog cover"
+       class="w-full h-48 object-cover">
+
+  <!-- Content -->
+  <div class="p-4">
+    <p class="text-sm text-gray-500">Sep 28, 2025 · <span class="text-indigo-500">Technology</span></p>
+    <h2 class="mt-2 text-xl font-bold text-gray-800">Getting Started with Tailwind CSS</h2>
+    <p class="mt-2 text-gray-600 text-sm">
+      Tailwind CSS makes it easy to build modern, responsive UIs with utility-first classes...
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <div class="px-4 pb-4">
+    <a href="#"
+       class="inline-block text-indigo-500 font-semibold hover:underline">
+       Read More →
+    </a>
+  </div>
+</div>
+<br><br><br>
+<div class="max-w-sm mx-auto bg-white border rounded-xl shadow-lg overflow-hidden p-6 text-center">
+  <!-- Profile Image -->
+  <img src="/myself.jpg"
+       alt="Team member"
+       class="w-24 h-24 mx-auto rounded-full border-4 border-indigo-500 shadow-lg">
+
+  <!-- Name & Role -->
+  <h2 class="mt-4 text-xl font-bold text-gray-800">Haruna Mohammed</h2>
+  <p class="text-gray-500">Software Developer</p>
+
+  <!-- Bio -->
+  <p class="mt-3 text-sm text-gray-600">
+    Passionate about building modern web apps and learning new technologies.
+  </p>
+
+  <!-- Social Links -->
+  <div class="flex justify-center gap-4 mt-4">
+    <a href="#" class="text-blue-500 hover:text-blue-700">LinkedIn</a>
+    <a href="#" class="text-gray-700 hover:text-black">GitHub</a>
+    <a href="#" class="text-pink-500 hover:text-pink-700">Twitter</a>
+  </div>
+</div>
+
+
+<br><br><br>
+<div class="max-w-sm mx-auto bg-white border rounded-xl shadow-lg overflow-hidden">
+  <!-- Product Image -->
+  <img src="/headphone.jpg"
+       alt="Product"
+       class="w-full h-48 object-cover">
+
+  <!-- Product Info -->
+  <div class="p-4">
+    <h2 class="text-lg font-bold text-gray-800">Wireless Headphones</h2>
+    <p class="mt-1 text-indigo-600 font-semibold">$59.99</p>
+
+    <!-- Rating -->
+    <div class="mt-2 text-yellow-500">⭐⭐⭐⭐☆</div>
+
+    <!-- Button -->
+    <button class="mt-4 w-full bg-indigo-500 text-white py-2 px-4 rounded-lg hover:bg-indigo-600 transition">
+      Add to Cart
+    </button>
+  </div>
+</div>
+
+
+<br><br><br>
+<div class="max-w-md mx-auto bg-white border rounded-xl shadow-lg overflow-hidden p-6">
+  <!-- Quote -->
+  <p class="text-gray-700 text-base italic">
+    “This platform has completely changed the way I learn web development. Tailwind CSS makes styling so much easier!”
+  </p>
+
+  <!-- Rating -->
+  <div class="mt-3 text-yellow-500">⭐⭐⭐⭐⭐</div>
+
+  <!-- User Info -->
+  <div class="flex items-center gap-3 mt-4">
+    <img src="/myself.jpg"
+         alt="User"
+         class="w-12 h-12 rounded-full border-2 border-indigo-500">
+    <div>
+      <h3 class="font-bold text-gray-800">Haruna Mohammed</h3>
+      <p class="text-sm text-gray-500">Software Developer</p>
+    </div>
+  </div>
+</div>
+
+
+<br><br><br>
+
+<div class="max-w-sm mx-auto bg-white border rounded-xl shadow-md p-6 text-center">
+  <!-- Icon / Label -->
+  <div class="text-indigo-500 text-3xl mb-2">📊</div>
+  <p class="text-sm uppercase text-gray-500">Total Sales</p>
+
+  <!-- Main Number -->
+  <h2 class="text-3xl font-bold text-gray-800">12,450</h2>
+
+  <!-- Growth Indicator -->
+  <p class="text-green-500 text-sm mt-2">+12% from last month</p>
+</div>
+
+<br><br><br>
+<div class="max-w-sm mx-auto bg-white border rounded-xl shadow-lg p-6 text-center">
+  <!-- Title -->
+  <h2 class="text-xl font-bold text-gray-800">Basic Plan</h2>
+  <p class="text-gray-500 mt-1">For individuals & starters</p>
+
+  <!-- Price -->
+  <h3 class="text-4xl font-extrabold text-indigo-600 mt-4">$19<span class="text-lg text-gray-500">/mo</span></h3>
+
+  <!-- Features -->
+  <ul class="mt-6 space-y-2 text-gray-700">
+    <li>✔ 10 Projects</li>
+    <li>✔ Basic Support</li>
+    <li>✔ Access to Community</li>
+  </ul>
+
+  <!-- CTA -->
+  <button class="mt-6 w-full bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700">
+    Get Started
+  </button>
+</div>
+
+
+<br><br>
+
+<div class="max-w-sm mx-auto bg-white rounded-xl shadow-lg p-6 text-center">
+  <!-- Profile Image -->
+  <img src="/myself.jpg" alt="Profile" class="w-24 h-24 mx-auto rounded-full shadow-md">
+
+  <!-- Name & Role -->
+  <h2 class="mt-4 text-xl font-bold text-gray-800">Haruna Mohammed</h2>
+  <p class="text-gray-500">Software Developer</p>
+
+  <!-- Bio -->
+  <p class="mt-2 text-gray-600 text-sm">
+    Passionate about building modern web apps with Tailwind CSS and JavaScript.
+  </p>
+
+  <!-- Social Links -->
+  <div class="flex justify-center gap-4 mt-4">
+    <a href="#" class="text-blue-500 hover:text-blue-700">Twitter</a>
+    <a href="#" class="text-gray-800 hover:text-black">GitHub</a>
+    <a href="#" class="text-pink-500 hover:text-pink-700">LinkedIn</a>
+  </div>
+</div>
+
+<br><br><br>
+
+<div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+  <!-- Featured Image -->
+  <img src="/myself.jpg" alt="Blog Post" class="w-full h-48 object-cover">
+
+  <!-- Blog Content -->
+  <div class="p-6">
+    <h2 class="text-xl font-bold text-gray-800">Getting Started with Tailwind CSS</h2>
+    <p class="mt-2 text-gray-600 text-sm">
+      How to learn how to style modern web applications faster using Tailwind CSS utilities.
+    </p>
+  </div>
+
+  <!-- Button -->
+  <div class="p-6 pt-0">
+    <button class="mt-4 bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600">
+      Read More
+    </button>
+  </div>
+</div>
+
+
+
+<br><br><br>
+<div class="max-w-sm mx-auto bg-white rounded-xl shadow-lg border p-6 text-center">
+  <!-- Plan Name -->
+  <h2 class="text-xl font-bold text-gray-800">Basic Plan</h2>
+
+  <!-- Price -->
+  <p class="mt-2 text-3xl font-extrabold text-indigo-600">$19
+    <span class="text-sm text-gray-500">/month</span>
+  </p>
+
+  <!-- Features -->
+  <ul class="mt-4 space-y-2 text-gray-600">
+    <li>✔ 10 Projects</li>
+    <li>✔ 5 GB Storage</li>
+    <li>✔ Basic Support</li>
+  </ul>
+
+  <!-- Button -->
+  <button class="mt-6 w-full bg-indigo-500 text-white py-2 px-4 rounded hover:bg-indigo-600">
+    Get Started
+  </button>
+</div>
+
+<br><br><br>
+
+<div class="max-w-sm mx-auto bg-white rounded-xl shadow-lg p-6 text-center">
+  <!-- Profile Image -->
+  <img src="/myself.jpg" alt="Profile" class="w-24 h-24 mx-auto rounded-full object-cover">
+
+  <!-- Name & Role -->
+  <h2 class="mt-4 text-xl font-bold text-gray-800">Haruna Mohammed</h2>
+  <p class="text-gray-500">Software Developer</p>
+
+  <!-- Stats -->
+  <div class="mt-6 grid grid-cols-3 gap-4 text-gray-700">
+    <div>
+      <p class="text-lg font-bold">120</p>
+      <p class="text-sm text-gray-500">Posts</p>
+    </div>
+    <div>
+      <p class="text-lg font-bold">5k</p>
+      <p class="text-sm text-gray-500">Followers</p>
+    </div>
+    <div>
+      <p class="text-lg font-bold">2k</p>
+      <p class="text-sm text-gray-500">Likes</p>
+    </div>
+  </div>
+
+  <!-- Button -->
+  <button class="mt-6 bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600">
+    Follow
+  </button>
+</div>
+
+
+</body>
+</html>
