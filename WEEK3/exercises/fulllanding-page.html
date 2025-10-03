@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Haruna Dev - Landing Page</title>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 bg-white border-b shadow-md px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <img src="/logo.jpg" alt="Logo" class="h-10 w-10 rounded-full border-2 border-gray-300">
+      <span class="font-bold text-lg">Haruna Dev</span>
+    </div>
+    <div class="hidden md:flex gap-6">
+      <a href="#" class="hover:text-indigo-600">Home</a>
+      <a href="#" class="hover:text-indigo-600">Projects</a>
+      <a href="#" class="hover:text-indigo-600">About</a>
+      <a href="#" class="hover:text-indigo-600">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-24 pb-12 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I’m Haruna Mohammed</h1>
+    <p class="text-lg md:text-xl mb-6">Am building modern web experiences with Tailwind CSS and.</p>
+    <a href="#projects" class="bg-yellow-400 hover:bg-yellow-500 px-6 py-3 rounded-lg font-semibold">View Projects</a>
+  </section>
+
+  <!-- Cards / Projects Section -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+      <h2 class="font-bold text-xl mb-2">Project One</h2>
+      <p class="text-gray-500 mb-4">A brief description of this project, built with modern tools.</p>
+      <a href="#" class="text-indigo-600 hover:underline font-semibold">View Details</a>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+      <h2 class="font-bold text-xl mb-2">Project Two</h2>
+      <p class="text-gray-500 mb-4">A brief description of this project, highlighting its features.</p>
+      <a href="#" class="text-indigo-600 hover:underline font-semibold">View Details</a>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+      <h2 class="font-bold text-xl mb-2">Project Three</h2>
+      <p class="text-gray-500 mb-4">A brief description of this project, emphasizing design and usability.</p>
+      <a href="#" class="text-indigo-600 hover:underline font-semibold">View Details</a>
+    </div>
+  </section>
+
+  <!-- Modern Gradient Footer -->
+  <footer class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+      
+      <!-- Left: Brand -->
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="/logo.jpg" alt="Logo" class="h-10 w-10 rounded-full border-2 border-white">
+          <span class="font-semibold text-lg">Haruna Dev</span>
+        </div>
+        <p class="mt-4 text-gray-200 text-sm">
+          Crafting modern web apps with Tailwind CSS.
+        </p>
+      </div>
+
+      <!-- Center Links -->
+      <div class="flex flex-col gap-3">
+        <h3 class="font-semibold text-lg mb-2">Quick Links</h3>
+        <a href="#" class="hover:text-yellow-300">Home</a>
+        <a href="#" class="hover:text-yellow-300">Projects</a>
+        <a href="#" class="hover:text-yellow-300">Blog</a>
+        <a href="#" class="hover:text-yellow-300">Contact</a>
+      </div>
+
+      <!-- Newsletter + Social -->
+      <div>
+        <h3 class="font-semibold text-lg mb-3">Stay Updated</h3>
+        <form class="flex flex-col sm:flex-row gap-3">
+          <input 
+            type="email" 
+            placeholder="Enter your email" 
+            class="px-4 py-2 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400 flex-1"
+          >
+          <button 
+            type="submit" 
+            class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-4 py-2 rounded-lg"
+          >
+            Subscribe
+          </button>
+        </form>
+        
+        <!-- Social Icons -->
+        <div class="flex gap-4 mt-4">
+          <a href="#" class="hover:text-blue-400">Twitter</a>
+          <a href="#" class="hover:text-gray-100">GitHub</a>
+          <a href="#" class="hover:text-blue-600">LinkedIn</a>
+        </div>
+        
+        <p class="mt-2 text-xs text-gray-200">No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+
+    <div class="mt-10 text-center text-sm text-gray-200 border-t border-white/20 pt-4">
+      © 2025 Haruna Mohammed. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

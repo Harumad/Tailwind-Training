@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Dark Mode with Time & LocalStorage</title>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen flex flex-col items-center justify-center">
+  
+  <h1 class="text-3xl font-bold mb-4">Haruna Mohammed</h1>
+  <p class="mb-6">This page changes theme based on <span class="font-semibold">time</span> or your <span class="font-semibold">choice</span>.</p>
+
+  <button id="darkToggle" class="px-4 py-2 rounded bg-blue-500 text-white">🌙 Toggle Mode</button>
+
+  <script>
+    const toggle = document.getElementById("darkToggle");
+    const root = document.documentElement;
+
+    // Check if user preference is saved
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme) {
+      if (savedTheme === "dark") root.classList.add("dark");
+      else root.classList.remove("dark");
+    } else {
+      // No saved preference → use system time
+      const hour = new Date().getHours();
+      if (hour >= 19 || hour < 6) {
+        root.classList.add("dark");
+      } else {
+        root.classList.remove("dark");
+      }
+    }
+
+    // Toggle button
+    toggle.addEventListener("click", () => {
+      root.classList.toggle("dark");
+
+      if (root.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+      } else {
+        localStorage.setItem("theme", "light");
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Tailwind Animations Demo</title>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-10">
+
+    <!-- Card 1 - Scale on hover -->
+    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-500 hover:scale-105">
+      <h2 class="text-xl font-bold mb-2 text-blue-600">Scale Card</h2>
+      <p class="text-gray-600">This card grows slightly bigger when you hover.</p>
+    </div>
+
+    <!-- Card 2 - Rotate on hover -->
+    <div class="bg-white p-6 rounded-xl shadow-lg transform transition-transform duration-500 hover:rotate-3">
+      <h2 class="text-xl font-bold mb-2 text-green-600">Rotate Card</h2>
+      <p class="text-gray-600">This card rotates a little when hovered.</p>
+    </div>
+
+    <!-- Card 3 - Color transition -->
+    <div class="bg-white p-6 rounded-xl shadow-lg transition-colors duration-500 hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:text-white">
+      <h2 class="text-xl font-bold mb-2">Color Transition</h2>
+      <p>This card changes background gradient when you hover.</p>
+    </div>
+
+  </div>
+
+  <!-- Animated Button -->
+  <div class="text-center mt-10">
+    <button class="px-8 py-3 bg-indigo-500 text-white font-semibold rounded-lg shadow-md 
+                   transition duration-300 ease-in-out transform hover:scale-110 hover:bg-indigo-600">
+      Hover Here 
+    </button>
+  </div>
+
+  <!-- Built-in Animation Example -->
+  <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-6">
+    <div class="w-6 h-6 bg-blue-500 rounded-full animate-bounce"></div>
+    <div class="w-6 h-6 bg-green-500 rounded-full animate-spin"></div>
+    <div class="w-6 h-6 bg-pink-500 rounded-full animate-pulse"></div>
+  </div> 
+  <br><br><br>
+
+  
+
+   <!-- <div class="p-8 flex gap-6">
+  <button class="px-6 py-3 bg-blue-500 text-white rounded-lg transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-105">
+    Hover Me
+  </button>
+
+  <button class="px-6 py-3 bg-green-500 text-white rounded-lg transform hover:rotate-6 transition-transform duration-500">
+    Rotate
+  </button>
+</div> -->
+
+
+
+
+</body>
+</html>

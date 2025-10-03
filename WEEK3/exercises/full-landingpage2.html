@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Haruna Dev - Fancy Landing Page</title>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b shadow-md px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <img src="/logo.jpg" alt="Logo" class="h-10 w-10 rounded-full border-2 border-gray-300">
+      <span class="font-bold text-lg">Haruna Dev</span>
+    </div>
+    <div class="hidden md:flex gap-6">
+      <a href="#hero" class="hover:text-indigo-600">Home</a>
+      <a href="#projects" class="hover:text-indigo-600">Projects</a>
+      <a href="#about" class="hover:text-indigo-600">About</a>
+      <a href="#contact" class="hover:text-indigo-600">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative pt-28 pb-20 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white text-center overflow-hidden">
+    <!-- Hero Background Shape -->
+    <div class="absolute -top-20 -left-40 w-96 h-96 bg-pink-400/30 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-32 -right-40 w-96 h-96 bg-indigo-400/30 rounded-full blur-3xl"></div>
+
+    <div class="relative z-10 max-w-3xl mx-auto px-6">
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Hi, I’m Haruna Mohammed</h1>
+      <p class="text-lg md:text-xl mb-6">I build modern, responsive websites using Tailwind CSS.</p>
+      <a href="#projects" class="bg-yellow-400 hover:bg-yellow-500 px-8 py-3 rounded-lg font-semibold text-lg transition transform hover:-translate-y-1">View Projects</a>
+    </div>
+  </section>
+
+  <!-- Projects / Cards Section -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-20 -mt-32 relative z-20">
+    <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition">
+        <img src="/project1.jpg" class="w-full h-48 object-cover" alt="Project 1">
+        <div class="p-6 bg-white">
+          <h3 class="font-bold text-xl mb-2 text-gray-900">Project One</h3>
+          <p class="text-gray-600 mb-4">A modern web application built with Tailwind CSS and React.</p>
+          <a href="#" class="text-indigo-600 hover:underline font-semibold">View Details</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-gradient-to-r from-green-400 to-teal-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition">
+        <img src="/project2.jpg" class="w-full h-48 object-cover" alt="Project 2">
+        <div class="p-6 bg-white">
+          <h3 class="font-bold text-xl mb-2 text-gray-900">Project Two</h3>
+          <p class="text-gray-600 mb-4">Responsive landing page with animations and Tailwind utilities.</p>
+          <a href="#" class="text-green-700 hover:underline font-semibold">View Details</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-gradient-to-r from-yellow-400 to-red-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition">
+        <img src="/project3.jpg" class="w-full h-48 object-cover" alt="Project 3">
+        <div class="p-6 bg-white">
+          <h3 class="font-bold text-xl mb-2 text-gray-900">Project Three</h3>
+          <p class="text-gray-600 mb-4">Creative dashboard UI design using Tailwind and components.</p>
+          <a href="#" class="text-red-600 hover:underline font-semibold">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section (Overlapping Section) -->
+  <section id="about" class="bg-white py-20 relative z-10 -mt-32">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">About Me</h2>
+      <p class="text-gray-700 mb-6">
+        I am a software developer with a passion for creating beautiful, responsive, and functional websites and applications using modern web technologies.
+      </p>
+      <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-semibold transition">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+      
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="/logo.jpg" alt="Logo" class="h-10 w-10 rounded-full border-2 border-white">
+          <span class="font-semibold text-lg">Haruna Dev</span>
+        </div>
+        <p class="mt-4 text-gray-200 text-sm">
+          Building modern web apps with Tailwind CSS.
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div class="flex flex-col gap-3">
+        <h3 class="font-semibold text-lg mb-2">Quick Links</h3>
+        <a href="#hero" class="hover:text-yellow-300">Home</a>
+        <a href="#projects" class="hover:text-yellow-300">Projects</a>
+        <a href="#about" class="hover:text-yellow-300">About</a>
+        <a href="#contact" class="hover:text-yellow-300">Contact</a>
+      </div>
+
+      <!-- Newsletter + Social -->
+      <div>
+        <h3 class="font-semibold text-lg mb-3">Stay Updated</h3>
+        <form class="flex flex-col sm:flex-row gap-3">
+          <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400 flex-1">
+          <button class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-4 py-2 rounded-lg">Subscribe</button>
+        </form>
+        <div class="flex gap-4 mt-4">
+          <a href="#" class="hover:text-blue-400">Twitter</a>
+          <a href="#" class="hover:text-gray-100">GitHub</a>
+          <a href="#" class="hover:text-blue-600">LinkedIn</a>
+        </div>
+        <p class="mt-2 text-xs text-gray-200">No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+    <div class="mt-10 text-center text-sm text-gray-200 border-t border-white/20 pt-4">
+      © 2025 Haruna Mohammed. All rights reserved.
+    </div>
+  </footer>
+<br><br><br>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Haruna Dev Portfolio</title>
+</head>
+<body class="bg-gray-50 text-gray-800 scroll-smooth">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-md px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <img src="/logo.jpg" alt="Logo" class="h-10 w-10 rounded-full border-2 border-gray-300">
+      <span class="font-bold text-lg">Haruna Dev</span>
+    </div>
+    <div class="hidden md:flex gap-6 font-semibold">
+      <a href="#hero" class="hover:text-indigo-600 transition">Home</a>
+      <a href="#projects" class="hover:text-indigo-600 transition">Projects</a>
+      <a href="#about" class="hover:text-indigo-600 transition">About</a>
+      <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative pt-28 pb-24 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white overflow-hidden">
+    <!-- Animated Background Shapes -->
+    <div class="absolute -top-24 -left-32 w-96 h-96 bg-pink-400/40 rounded-full blur-3xl animate-pulse-slow"></div>
+    <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-indigo-400/40 rounded-full blur-3xl animate-pulse-slow"></div>
+
+    <div class="relative z-10 max-w-3xl mx-auto px-6 text-center">
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-4 animate-fadeIn">Hi, I’m <span class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-pink-400 to-indigo-400">Haruna Mohammed</span></h1>
+      <p class="text-lg md:text-xl mb-6 animate-fadeIn delay-200">I build modern, responsive websites & applications using Tailwind CSS and creativity.</p>
+      <a href="#projects" class="bg-yellow-400 hover:bg-yellow-500 px-8 py-3 rounded-lg font-semibold text-lg transition transform hover:-translate-y-1 animate-bounce-slow">View Projects</a>
+    </div>
+  </section>
+
+  <!-- Projects / Cards Section -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-24 -mt-32 relative z-20">
+    <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+        <img src="/project1.jpg" class="w-full h-48 object-cover" alt="Project 1">
+        <div class="p-6 bg-white">
+          <h3 class="font-bold text-xl mb-2 text-gray-900">Project One</h3>
+          <p class="text-gray-600 mb-4">Responsive web application built with Tailwind CSS and React.</p>
+          <a href="#" class="text-indigo-600 hover:underline font-semibold">View Details</a>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-gradient-to-r from-green-400 to-teal-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+        <img src="/project2.jpg" class="w-full h-48 object-cover" alt="Project 2">
+        <div class="p-6 bg-white">
+          <h3 class="font-bold text-xl mb-2 text-gray-900">Project Two</h3>
+          <p class="text-gray-600 mb-4">Creative landing page with Tailwind utilities and animations.</p>
+          <a href="#" class="text-green-700 hover:underline font-semibold">View Details</a>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-gradient-to-r from-yellow-400 to-red-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+        <img src="/project3.jpg" class="w-full h-48 object-cover" alt="Project 3">
+        <div class="p-6 bg-white">
+          <h3 class="font-bold text-xl mb-2 text-gray-900">Project Three</h3>
+          <p class="text-gray-600 mb-4">Dashboard UI design using Tailwind and reusable components.</p>
+          <a href="#" class="text-red-600 hover:underline font-semibold">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-white py-24">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">About Me</h2>
+      <p class="text-gray-700 mb-6">
+        I am a passionate software developer building modern web applications with responsive designs and polished user interfaces.
+      </p>
+      <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-semibold transition transform hover:-translate-y-1">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-100 py-24">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+      <form class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <input type="text" placeholder="Your Name" class="p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400">
+        <input type="email" placeholder="Your Email" class="p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400">
+        <textarea placeholder="Message" class="sm:col-span-2 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
+        <button class="sm:col-span-2 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-semibold transition transform hover:-translate-y-1">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Floating Back-to-Top Button -->
+  <a href="#hero" class="fixed bottom-6 right-6 bg-indigo-600 text-white p-4 rounded-full shadow-lg hover:bg-indigo-700 transition transform hover:-translate-y-1">
+    ↑
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+      
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="/logo.jpg" alt="Logo" class="h-10 w-10 rounded-full border-2 border-white">
+          <span class="font-semibold text-lg">Haruna Dev</span>
+        </div>
+        <p class="mt-4 text-gray-200 text-sm">Building modern web apps with Tailwind CSS.</p>
+      </div>
+
+      <!-- Links -->
+      <div class="flex flex-col gap-3">
+        <h3 class="font-semibold text-lg mb-2">Quick Links</h3>
+        <a href="#hero" class="hover:text-yellow-300">Home</a>
+        <a href="#projects" class="hover:text-yellow-300">Projects</a>
+        <a href="#about" class="hover:text-yellow-300">About</a>
+        <a href="#contact" class="hover:text-yellow-300">Contact</a>
+      </div>
+
+      <!-- Newsletter + Social -->
+      <div>
+        <h3 class="font-semibold text-lg mb-3">Stay Updated</h3>
+        <form class="flex flex-col sm:flex-row gap-3">
+          <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400 flex-1">
+          <button class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-4 py-2 rounded-lg">Subscribe</button>
+        </form>
+        <div class="flex gap-4 mt-4">
+          <a href="#" class="hover:text-blue-400">Twitter</a>
+          <a href="#" class="hover:text-gray-100">GitHub</a>
+          <a href="#" class="hover:text-blue-600">LinkedIn</a>
+        </div>
+        <p class="mt-2 text-xs text-gray-200">No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+    <div class="mt-10 text-center text-sm text-gray-200 border-t border-white/20 pt-4">
+      © 2025 Haruna Mohammed. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Custom Animation Styles -->
+  <style>
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);} }
+    .animate-fadeIn { animation: fadeIn 1s ease forwards; }
+    .delay-200 { animation-delay: 0.2s; }
+    .animate-pulse-slow { animation: pulse 6s infinite; }
+    .animate-bounce-slow { animation: bounce 2s infinite; }
+  </style>
+
+  <br><br><br>
+
+</body>
+</html>
+
+
+
+
+
+</body>
+</html>
