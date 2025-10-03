@@ -1,0 +1,35 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hero Card */
+.hero-card {
+  @apply bg-white/20 backdrop-blur-xl rounded-3xl shadow-xl p-12 text-center max-w-lg;
+}
+
+.hero-title {
+  @apply text-4xl sm:text-5xl font-heading font-bold text-white mb-4;
+}
+
+.hero-text {
+  @apply text-lg sm:text-xl text-white/90 mb-6;
+}
+
+.hero-button {
+  @apply px-6 py-3 rounded-lg bg-indigo-500 text-white font-semibold
+         hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-400
+         transition duration-300 transform hover:scale-105;
+}
+
+/* Alert Box */
+.alert {
+  @apply p-4 rounded-lg text-white mb-4;
+}
+.alert-error { @apply bg-red-500; }
+.alert-success { @apply bg-green-500; }
+
+/* Floating Shapes */
+.floating-shape {
+  @apply rounded-full opacity-30 absolute animate-float;
+}

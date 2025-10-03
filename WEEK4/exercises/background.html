@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="relative h-screen w-full bg-gradient-to-r from-purple-600 via-pink-500 to-red-500">
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <div class="relative flex items-center justify-center h-full text-white text-4xl font-bold">
+    Using  Gradient In  Background
+  </div>
+</div>
+
+<br><br><br>
+
+<div class="relative h-screen bg-[url('https://picsum.photos/1600/900')] bg-cover bg-center">
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <div class="relative flex items-center justify-center h-full text-white text-4xl font-bold">
+    Hero Section
+  </div>
+</div>
+
+<br><br><br>
+
+<div class="h-screen w-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient-x flex items-center justify-center text-white text-4xl font-bold">
+  Animated Gradient
+</div>
+
+<style>
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 8s ease infinite;
+}
+</style>
+<br><br><br>
+
+
+<div class="h-screen bg-[url('https://picsum.photos/1600/900')] bg-cover bg-center flex items-center justify-center">
+  <div class="bg-white/20 backdrop-blur-lg p-10 rounded-2xl shadow-lg text-white text-2xl">
+    Glassmorphism Card
+  </div>
+</div>
+<br><br><br>
+
+
+<div class="h-screen bg-gray-900 flex items-center justify-center text-white text-3xl font-bold"
+     style="background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');">
+  Pattern Background
+</div>
+<br><br><br>
+
+
+
+<div class="h-screen flex">
+  <div class="w-1/2 bg-gradient-to-b from-blue-600 to-blue-900 flex items-center justify-center text-white">
+    Left Side
+  </div>
+  <div class="w-1/2 bg-gradient-to-b from-red-600 to-red-900 flex items-center justify-center text-white">
+    Right Side
+  </div>
+</div>
+
+
+</body>
+</html>
