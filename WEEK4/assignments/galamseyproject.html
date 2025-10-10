@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- <style type="text/tailwindcss">
+    @layer utilities {
+      /* Define the carousel animation */
+      @keyframes carousel-slide {
+        0%, 25% { transform: translateX(0%); } /* Image 1 visible */
+        30%, 55% { transform: translateX(-33.33%); } /* Image 2 visible */
+        60%, 85% { transform: translateX(-66.66%); } /* Image 3 visible */
+        90%, 100% { transform: translateX(0%); } /* Loop back to Image 1 */
+      }
+    }
+  </style> -->
+  <title>Rescue Ghana - Galamsey Awareness</title>
+</head>
+
+<body class="bg-gray-300 min-h-screen font-sans overflow-x-hidden">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 bg-red-700/90 backdrop-blur border-b-4 border-green-500 h-20 flex justify-between items-center px-8 shadow-lg">
+    <div class="flex items-center gap-4">
+      <img src="/galam1.png" alt="Logo" class="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm" />
+      <div>
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-white tracking-wide">
+          <span class="text-green-400">RESCUE GHANA</span>
+        </h1>
+        <p class="text-green-100 text-sm">
+          <marquee> Restoring Our Land, Securing Our Future</marquee>
+        </p>
+      </div>
+    </div>
+
+    <div class="hidden md:flex gap-6 text-lg font-semibold">
+      <a href="#" class="text-white hover:text-yellow-300 transition">Home</a>
+      <a href="#" class="text-white hover:text-yellow-300 transition">Problem</a>
+      <a href="#" class="text-white hover:text-yellow-300 transition">Action</a>
+      <a href="#" class="text-white hover:text-yellow-300 transition">Resources</a>
+      <a href="#" class="text-white hover:text-yellow-300 transition">About Us</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="relative w-full h-screen overflow-hidden">
+    <video autoplay muted loop playsinline class="absolute inset-0 w-full h-150 object-cover opacity-60 z-0">
+      <source src="/galvideo.mp4" type="video/mp4">
+      Browser does not support the video tag.
+    </video>
+
+    <!-- Overlay Text -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center bg-black/40 px-2">
+      <h1 class="text-5xl font-extrabold">The Ghanaian Earth Cries</h1>
+      <p class="text-lg max-w-2xl">
+        Together, we can restore our lands and secure a sustainable future for generations to come.
+      </p>
+    </div>
+</div>
+
+  <!-- Dual Section: Green & Red -->
+  <div class="grid md:grid-cols-2 h-auto md:h-screen">
+    <div class="bg-gradient-to-br from-green-600/90 to-green-900/80 text-white flex flex-col justify-center items-center p-8 text-center">
+      <h2 class="text-4xl font-bold mb-4">Green Ghana</h2>
+      <p class="text-lg max-w-md">
+        Preserving our forests, rivers, and wildlife to sustain life and empower future generations.
+      </p>
+    </div>
+
+    <div class="bg-gradient-to-br from-red-600/80 to-red-900/90 text-white flex flex-col justify-center items-center p-8 text-center">
+      <h2 class="text-4xl font-bold mb-4">Deserting Ghana</h2>
+      <p class="text-lg max-w-md">
+        Addressing deforestation and illegal mining to protect our environment and communities.
+      </p>
+    </div>
+</div>
+
+  <!-- Informational Section -->
+  <div class="relative z-10 py-16 bg-gray-100 text-center px-6">
+
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Why Our Forests Matter</h2>
+    <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+      Ghana's forests are a source of life — providing clean air, water, biodiversity, and livelihoods. 
+      Protecting them is not just an environmental act, It is an investment in our collective future.
+    </p>
+    <div class="flex flex-col md:flex-row justify-center gap-10">
+    <img src="/ga1.jpg" alt="Forest" class=" mt-10 w-100 h-130 max-w-4xl rounded-lg shadow-lg" />             
+    <img src="/greengh.jpg" alt="forest" class=" mt-10 w-100 h-130  max-w-4xl rounded-lg shadow-lg">
+    </div>
+</div>
+
+<!-- Informational Section -->
+
+  <div class="text-center py-16 px-6 bg-gradient-to-b from-green-100 via-white to-red-50">
+   <h1 class="text-4xl md:text-5xl text-gray-800 leading-wide font-extrabold mb-6">When the Rivers Weep and the Forests Fall Silent</h1>
+   <p class="text-lg md:text-xl text-gray-700 max-w-4xl leading-relaxed mx-auto"><span class="font-semibold text-red-700">Galamsey</span> is bleeding the heart of Ghana. Once lush forests are now barren scars, 
+    and rivers that once gave life now carry poison. Families lose their farmlands, and 
+    communities face water shortages and disease. This is more than an environmental issue, 
+    it's a fight for our survival, our dignity, and the future of our nation. <span class="font-semibold text-green-500">Together,</span> 
+    we must act now to reclaim our lands and restore the Ghana we are proud of.</p>
+
+    <div class="mt-4">
+        <hr class="border-t-4 border-green-500 w-32 mx-auto rounded-full">
+    </div>
+    </div>
+
+
+
+<!-- Hero Fight On Galamsey -->
+ <!-- <div class="w-full max-w-xl mx-auto overflow-hidden rounded-lg shadow-lg">
+    <! Image track for the carousel -->
+    <!-- <div class="flex w-[300%] animate-[carousel-slide_15s_infinite]">
+        <div>
+            <p></p>
+      <img src="/dog1.jpg" class="w-150 h-100 object-cover" alt="Image 1">
+        </div>
+      <img src="/headphone.jpg" class="w-140 h-100 object-cover" alt="Image 2">
+      <img src="/logo.jpg" class="w-150 h-100 object-cover" alt="Image 3">
+    </div>
+  </div>  -->
+
+
+  
+
+  
+
+  <!-- 🧩 ADD HERE: Section 1 -->
+  <!-- Section: Prominent people quotes with their images on galamsey -->
+  <!-- (Add a grid or carousel with their portraits, names, and quotes) -->
+
+
+  <!-- 🧩 ADD HERE: Section 2 -->
+  <!-- Section: Images of different rivers polluted by galamsey -->
+  <!-- (Use a responsive image gallery showing river pollution before & after) -->
+
+
+  <!-- 🧩 ADD HERE: Section 3 -->
+  <!-- Section: Images of land and forest reserves destroyed by galamsey -->
+  <!-- (You can show a comparison grid — “Before & After” land destruction) -->
+
+
+  <!-- 🧩 ADD HERE: Section 4 -->
+  <!-- Section: People who lost their lives fighting against galamsey -->
+  <!-- (A tribute wall with their names, photos, and a short description) -->
+
+
+  <!-- 🧩 ADD HERE: Section 5 -->
+  <!-- Section: Water treatment plants affected by galamsey -->
+  <!-- (Display images and a short paragraph on water crisis impact) -->
+
+
+  <!-- 🧩 ADD HERE: Section 6 -->
+  <!-- Section: Efforts taken to fight galamsey -->
+  <!-- (Show government, NGOs, youth, and community actions — images + text) -->
+
+
+  <!-- 🧩 ADD HERE: Section 7 -->
+  <!-- Section: Health implications of galamsey on people, newborns, and unborn babies -->
+  <!-- (Use infographics or image cards to show health impact visually) -->
+
+
+  <!--  OPTIONAL: Section 8 -->
+  <!-- Section: Call to Action (CTA) -->
+  <!-- (Encourage readers to join the cause, volunteer, donate, or spread awareness) -->
+
+
+  <!-- 🧩 OPTIONAL: Section 9 -->
+  <!-- Section: Educational Resources / Learn More -->
+  <!-- (Provide external links, PDFs, or awareness materials) -->
+
+
+  <!-- ✅ Hero Fight On Galamsey -->
+  ...
+
+  <!-- Footer -->
+  <footer class="bg-red-700/90 text-white text-center py-6">
+    <p>&copy; 2025 Rescue Ghana Initiative — All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
