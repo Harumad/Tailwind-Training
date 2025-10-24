@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <!-- <style type="text/tailwindcss">
+  <style type="text/tailwindcss">
     @layer utilities {
       /* Define the carousel animation */
       @keyframes carousel-slide {
@@ -14,7 +14,77 @@
         90%, 100% { transform: translateX(0%); } /* Loop back to Image 1 */
       }
     }
-  </style> -->
+
+
+ .tear {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 6px;
+    height: 10px;
+    background: rgba(173, 216, 230, 0.8); /* light blue */
+    border-radius: 50%;
+    transform: translateX(-50%);
+    animation: drop 2.5s infinite ease-in;
+  }
+
+  .tear::before,
+  .tear::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 6px;
+    height: 10px;
+    background: rgba(173, 216, 230, 0.8);
+    border-radius: 50%;
+  }
+
+  .tear::before {
+    left: -10px;
+    animation: drop 3s infinite ease-in 0.5s;
+  }
+
+  .tear::after {
+    left: 10px;
+    animation: drop 2.8s infinite ease-in 1s;
+  }
+
+  @keyframes drop {
+    0% {
+      opacity: 0;
+      transform: translateY(0) scale(0.5);
+    }
+    30% {
+      opacity: 1;
+      transform: translateY(10px) scale(1);
+    }
+    60% {
+      opacity: 0.9;
+      transform: translateY(25px) scale(0.8);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(40px) scale(0.3);
+    }
+  }
+
+/* fading and vigil for hero section */
+
+
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.3;
+  }
+}
+.animate-flicker {
+  animation: flicker 3s infinite ease-in-out;
+}
+
+  </style> 
   <title>Rescue Ghana - Galamsey Awareness</title>
 </head>
 
@@ -22,9 +92,11 @@
 
   <!-- Navbar -->
   <nav class="fixed top-0 w-full z-50 bg-red-700/90 backdrop-blur border-b-4 border-green-500 h-20 flex justify-between items-center px-8 shadow-lg">
-    <div class="flex items-center gap-4">
+    <div class="flex items-center gap-4 relative">
+      <div class="relative">
       <img src="/images/logo1.jpg" alt="Logo" class="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm" />
-      <div>
+      <div class="tear"></div>
+      </div>
         <h1 class="text-2xl sm:text-3xl font-extrabold text-white tracking-wide">
           <span class="text-green-400">RESCUE GHANA</span>
         </h1>
@@ -199,7 +271,7 @@
 
     <div class=" relative bg-white/60 backdrop-blur-md rounded-3xl shadow-lg p-6 border-b-4 border-transparent transition transform hover:-translate-y-2 hover:shadow-2xl
     hover border-b[6px] hover:-transparent hover:bg-white-/90 duration-300 ease-in-out">
-    <div class="absolute inset-x-0 bottom-0 h-[6px] bg-gradient-to-r from-cyan-500 via-emerald-500 to-amber-600 rounded-b-3xl group-hover:scale-[.02] transition-transform duration-300 "></div>
+    <div class="absolute inset-0 bottom-0 h-[6px] bg-gradient-to-r from-cyan-500 via-emerald-500 to-amber-600 rounded-b-3xl group-hover:scale-[.02] transition-transform duration-300 "></div>
     <img src="/images/ankobra.jpeg" alt="Prominentpple" class="rounded-2xl w-full h-64 object-cover shadow-md">
     <div class="mt-4 text-center">
     <h3 class="mb-2 font-semibold text-gray-800 text-xl">River Ankobra</h3>
@@ -278,7 +350,6 @@
     </p>
     </div>
     </div>
-    
     </div>
 
 
@@ -286,39 +357,385 @@
   <!-- Section: People who lost their lives fighting against galamsey -->
   <!-- (A tribute wall with their names, photos, and a short description) -->
 
+<div class="py-20 px-6 bg-gradient-to-b from-gray-900 via-black to-gray-800 text-white relative overflow-hidden">
+  <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+  <div  class="relative z-10 text-center max-w-5xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-red-500 tracking-wide">
+      Honoring the Fallen Heroes
+    </h2>
+    <p class="text-lg md:text-xl leading-relaxed text-gray-300 max-w-3xl mx-auto">
+      They stood for truth, justice, and the protection of our land.  
+      These brave souls sacrificed their lives in the fight against *galamsey*,  
+      defending Ghana's forests, rivers, and the future of generations yet unborn.  
+      Their courage echoes through the soil they died to protect.
+    </p>
+ 
 
-  <!-- 🧩 ADD HERE: Section 5 -->
+  <div class="mt-6 mb-12 flex justify-center">
+      <div class="w-32 border-t-4 border-red-600 rounded-full"></div>
+    </div>
+</div>
+
+
+
+<!-- hero images -->
+
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+      <div class="bg-white/10 backdrop-blur-sm rounded-3xl overflow-hidden shadow-lg border border-gray-700 hover:scale-105 transform transition duration-500">
+        <img src="/images/cptmahama1.jpeg" alt="Captain Mahama" class="w-full h-80 object-cover opacity-90 hover:opacity-100 transition" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-red-400">Captain Maxwell Adam Mahama</h3>
+          <p class="text-gray-300 italic text-sm mt-2">
+            Brutally killed while performing his duty to protect the environment — a symbol of courage and sacrifice.
+          </p>
+        </div>
+      </div>
+
+
+
+<div class="bg-white/10 backdrop-blur-sm rounded-3xl overflow-hidden shadow-lg border border-gray-700 hover:scale-105 transform transition duration-500">
+        <img src="/images/fallen heros1.jpeg" alt="Fallen Heroes" class="w-full h-80 object-cover opacity-90 hover:opacity-100 transition" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-red-400">The Fallen Eight</h3>
+          <p class="text-gray-300 italic text-sm mt-2">
+            “Eight dedicated patriots who lost their lives standing for justice and accountability in Ghana's fight against illegal mining and corruption.”
+          </p>
+        </div>
+      </div>
+      </div>
+
+
+
+      <p class="mt-16 text-gray-200 font-semibold italic text-xl drop-shadow-lg text-center">
+     "A hero is someone who has given his or her life to something bigger than oneself.” — Joseph Campbell  
+      <span class="text-red-400 font-bold">- In Loving Memory</span>
+    </p>
+  </div>
+
+
+
+  <!--  ADD HERE: Section 5 -->
   <!-- Section: Water treatment plants affected by galamsey -->
   <!-- (Display images and a short paragraph on water crisis impact) -->
 
 
-  <!-- 🧩 ADD HERE: Section 6 -->
-  <!-- Section: Efforts taken to fight galamsey -->
-  <!-- (Show government, NGOs, youth, and community actions — images + text) -->
+ <!--  Section 5: The Cry of Our Rivers -->
+<div class="relative py-24 px-6 bg-gradient-to-b from-blue-950 via-slate-900 to-gray-900 text-white overflow-hidden">
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-5xl mx-auto text-center">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-blue-400 tracking-wide drop-shadow-lg">
+      The Cry of Our Rivers
+    </h2>
+    <p class="text-lg md:text-xl leading-relaxed text-gray-300 max-w-3xl mx-auto">
+      When the heroes' blood touched the soil, the rivers mourned with them.  
+      Once the lifeblood of Ghana's land, these waters now carry the poison of human greed.  
+      From the highlands to the coast, our streams whisper their sorrow —  
+      pleading for a return to purity, balance, and life.
+    </p>
+
+    <div class="mt-6 mb-10 flex justify-center">
+      <div class="w-32 border-t-4 border-blue-500 rounded-full shadow-blue-400"></div>
+    </div>
+
+    <p class="text-gray-400 italic text-sm max-w-2xl mx-auto">
+      “When the rivers die, the people follow. Protecting our waters is protecting our future.”
+    </p>
+  </div>
+
+  <!-- Images Grid -->
+  <div class="relative z-10 mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+    
+    <!-- Card 1 -->
+    <div class="bg-white/10 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl border border-gray-700 hover:scale-105 transform transition duration-500 hover:shadow-blue-500/30">
+      <img src="/images/deform1.jpg" alt="Newborn Baby with Deformities" class="w-full h-64 object-cover opacity-90 hover:opacity-100 transition" />
+      <div class="p-6 text-left">
+        <h3 class="text-xl font-semibold text-blue-400">Innocence Tainted at Birth</h3>
+        <p class="text-gray-300 mt-3 text-sm leading-relaxed">
+          Newborns in mining communities bear unseen scars —  
+          the tragic result of poisoned waters that nourish their mothers.  
+          Every drop tells a story of neglect and lost purity.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white/10 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl border border-gray-700 hover:scale-105 transform transition duration-500 hover:shadow-blue-500/30">
+      <img src="/images/deform2.jpg" alt="Child with Growth Irregularities" class="w-full h-64 object-cover opacity-90 hover:opacity-100 transition" />
+      <div class="p-6 text-left">
+        <h3 class="text-xl font-semibold text-blue-400">The Slow Poisoning of Growth</h3>
+        <p class="text-gray-300 mt-3 text-sm leading-relaxed">
+          Children grow beside polluted streams, drinking from what once sustained their ancestors.  
+          Their futures now bear the burden of our inaction.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white/10 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl border border-gray-700 hover:scale-105 transform transition duration-500 hover:shadow-blue-500/30">
+      <img src="/images/deform3.jpg" alt="Deformed Animal due to Pollution" class="w-full h-64 object-cover opacity-90 hover:opacity-100 transition" />
+      <div class="p-6 text-left">
+        <h3 class="text-xl font-semibold text-blue-400">Nature Bears the Wounds Too</h3>
+        <p class="text-gray-300 mt-3 text-sm leading-relaxed">
+          Livestock and wildlife suffer in silence.  
+          Near contaminated rivers, even life in the wild shows deformity —  
+          a haunting mirror of our own pollution.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-white/10 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl border border-gray-700 hover:scale-105 transform transition duration-500 hover:shadow-blue-500/30">
+      <img src="/images/expec1.jpg" alt="Pregnant Woman Fetching Water" class="w-full h-64 object-cover opacity-90 hover:opacity-100 transition" />
+      <div class="p-6 text-left">
+        <h3 class="text-xl font-semibold text-blue-400">Mothers Unknowingly at Risk</h3>
+        <p class="text-gray-300 mt-3 text-sm leading-relaxed">
+          Expectant mothers still fetch water from tainted rivers.  
+          Each sip risks the life within them —  
+          a painful symbol of how deeply this crisis flows.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="bg-white/10 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl border border-gray-700 hover:scale-105 transform transition duration-500 hover:shadow-blue-500/30">
+      <img src="/images/deform4.jpg" alt="Dead Fish in Polluted River" class="w-full h-64 object-cover opacity-90 hover:opacity-100 transition" />
+      <div class="p-6 text-left">
+        <h3 class="text-xl font-semibold text-blue-400">Rivers of Death, Once of Life</h3>
+        <p class="text-gray-300 mt-3 text-sm leading-relaxed">
+          The fish that once fed our people now float lifeless,  
+          the water once pure now turns against its own.  
+          The rivers cry — and so should we.
+        </p>
+      </div>
+    </div>
 
 
-  <!-- 🧩 ADD HERE: Section 7 -->
+  <div class="bg-white/10 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl border border-gray-700 hover:scale-105 transform transition duration-500 hover:shadow-blue-500/30">
+      <img src="/images/plant2.jpg" alt="Dead Fish in Polluted River" class="w-full h-64 object-cover opacity-90 hover:opacity-100 transition" />
+      <div class="p-6 text-left">
+        <h3 class="text-xl font-semibold text-blue-400">Overloaded Water Plant in Crisis</h3>
+        <p class="text-gray-300 mt-3 text-sm leading-relaxed">
+          A water treatment plant struggles with raw water turbidity 
+          exceeding 500 NTU and heavy metal contamination.  
+         The very systems meant to protect life are pushed to 
+         their limits by unchecked mining.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Closing Quote -->
+  
+  <div class="p-6 text-left">
+    <p class="text-gray-200 font-semibold italic text-xl drop-shadow-lg max-w-3xl mx-auto">
+      “If we silence our rivers, we silence our own survival.  
+      Let the waters speak again  clean, free, and alive.”  
+      <span class="text-blue-400 font-bold block mt-2">- Voices of the Earth</span>
+    </p>
+  </div>
+</div>
+</div>
+
+
+  <!-- ADD HERE: Section 7 -->
   <!-- Section: Health implications of galamsey on people, newborns, and unborn babies -->
   <!-- (Use infographics or image cards to show health impact visually) -->
+<div class="relative py-16 px-4 bg-gradient-to-b from-gray-950 via-neutral-900 to-gray-800 text-white overflow-hidden">
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
 
+  <!-- Content -->
+  <div class="relative z-10 max-w-5xl mx-auto text-center">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-red-400 tracking-wide drop-shadow-lg">
+      When Promises Turn to Silence
+    </h2>
+    <p class="text-lg md:text-xl leading-relaxed text-gray-300 max-w-3xl mx-auto">
+      They spoke with fire in their words while in opposition — condemning the poisoned rivers and promising rebirth.  
+      But when power changed hands, that fire became silence.  
+      Our rivers kept dying, our forests kept falling, and our gold kept bleeding into greedy hands.  
+      No party is innocent — all have failed to heal the wounds they once swore to close.
+    </p>
+
+    <div class="mt-6 mb-10 flex justify-center">
+      <div class="w-32 border-t-4 border-red-500 rounded-full"></div>
+    </div>
+
+    <p class="text-gray-400 italic text-sm max-w-2xl mx-auto">
+      “Our greatest pollution is not mercury or mud — it is political hypocrisy.”
+    </p>
+  </div>
+
+  <!-- Image Grid -->
+  <div class="relative z-10 mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+
+    <!-- Card 1 -->
+    <div class="relative bg-gradient-to-br from-[#1a1a1a]/95 via-[#2b0a0a]/90 to-[#000000]/95 backdrop-blur-md rounded-3xl overflow-hidden shadow-xl border border-gray-800 hover:scale-105 transform transition duration-500 hover:shadow-red-500/30">
+      <img src="/images/camp3.jpg" alt="Politician giving speech during rally" class="w-full h-64 object-cover opacity-80 hover:opacity-100 transition duration-500" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+      <div class="relative p-6 text-left">
+        <h3 class="text-xl font-semibold text-red-400">Mahama's Pledge - 2016</h3>
+        <p class="text-gray-300 mt-3 text-sm leading-relaxed">
+          On the campaign stage, former President John Dramani Mahama vowed to end the scourge of galamsey —  
+          to restore Ghana's rivers, and bring justice to the land.  
+          But like many before and after, the promise drowned in the very waters he swore to protect.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white/10 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl border border-gray-700 hover:scale-105 transform transition duration-500 hover:shadow-red-400/30">
+      <img src="/images/camp4.jpg" alt="Campaign posters near polluted river" class="w-full h-64 object-cover opacity-90 hover:opacity-100 transition" />
+      <div class="p-6 text-left">
+        <h3 class="text-xl font-semibold text-red-400">Akufo-Addo's Vow - 2017</h3>
+        <p class="text-gray-300 mt-3 text-sm leading-relaxed">
+          “I have put my presidency on the line for the fight against galamsey,” declared President Nana Addo Dankwa Akufo-Addo.  
+           The nation believed — for a moment.  
+           Yet as the rivers darkened and the forests fell, the line blurred between promise and politics.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white/10 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl border border-gray-700 hover:scale-105 transform transition duration-500 hover:shadow-red-400/30">
+      <img src="/images/camp5.jpg" alt="Ghana parliament silhouette under cloudy sky" class="w-full h-64 object-cover opacity-90 hover:opacity-100 transition" />
+      <div class="p-6 text-left">
+        <h3 class="text-xl font-semibold text-red-400">Echoes of Broken Promises</h3>
+        <p class="text-gray-300 mt-3 text-sm leading-relaxed">
+          Different governments. Different voices. The same rivers still cry.  
+         Mahama promised. Akufo-Addo vowed.  
+         But galamsey only grew stronger, thriving beneath the noise of politics.  
+         Hope has become a campaign slogan — repeated every four years, forgotten every dawn.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Closing Quote -->
+  <div class="relative z-10 mt-16 text-center">
+    <p class="text-gray-200 font-semibold italic text-xl drop-shadow-lg max-w-3xl mx-auto">
+      “Until we hold them accountable, our rivers will keep bleeding —  
+      and Ghana's future will be auctioned for another campaign.”  
+      <span class="text-red-400 font-bold">- Voices of the Forgotten</span>
+    </p>
+  </div>
+</div>
 
   <!--  OPTIONAL: Section 8 -->
   <!-- Section: Call to Action (CTA) -->
   <!-- (Encourage readers to join the cause, volunteer, donate, or spread awareness) -->
+<!--  Call to Action Section: Rescue Ghana Starts With You -->
+<section class="relative py-20 px-6 bg-gradient-to-br from-green-900 via-amber-700/80 to-red-800/90 text-white overflow-hidden">
+  <!-- Background Image Overlay -->
+  <img src="/images/ghanaearth.jpeg" alt="Rescue Ghana" class="absolute inset-0 w-full h-full object-cover opacity-30">
+  <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+
+  <div class="relative z-10 text-center max-w-4xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-wide">
+      Rescue Ghana <span class="text-amber-300">Starts With You</span>
+    </h2>
 
 
-  <!-- 🧩 OPTIONAL: Section 9 -->
+
+<!-- 🌾 Together We Rise Section -->
+<section class="relative py-16 px-6 bg-gradient-to-b from-amber-50 via-green-50 to-red-50 text-center">
+  <!-- Decorative top border -->
+  <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-green-600 via-yellow-400 to-red-600"></div>
+
+  <div class="max-w-3xl mx-auto relative z-10">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4">
+      Together, <span class="text-green-700">We Rise</span>
+    </h2>
+
+    <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+      The fight for Ghana's future begins with each of us — in our choices, our voices, and our courage to care.  
+      Let this be more than a campaign; let it be a movement of hearts determined to heal our land.  
+        
+    </p>
+
+    <p class="text-gray-600 italic">
+      “When the last river runs clean again, when the forests sing once more —  
+      then, and only then, shall we say Ghana has truly risen.”  
+    </p>
+
+    <div class="mt-8">
+      <a href="#top" class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-full shadow-md transition">
+         Back to Top
+      </a>
+    </div>
+  </div>
+
+  <!-- Decorative bottom border -->
+  <div class="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-green-600 via-yellow-400 to-red-600"></div>
+</section>
+
+
+
+    <p class="text-lg md:text-xl leading-relaxed mb-10 text-gray-100">
+      Every tree saved, every river protected, and every voice raised brings us closer to a cleaner, safer Ghana.  
+      The fight against <span class="text-green-300 font-semibold">galamsey</span> is not the duty of a few — it's the mission of a nation.  
+      Together, we can restore our land, our pride, and our children's inheritance.   
+    </p>
+
+    <!-- Call To Action Buttons -->
+    
+  <section class="py-20 bg-green-900 text-white text-center">
+  <h2 class="text-4xl font-bold mb-4">Join the Movement</h2>
+  <p class="max-w-2xl mx-auto text-lg mb-8">
+    You can make a difference — report illegal mining, support reforestation, and spread awareness.
+  </p>
+
+  <div class="flex flex-col sm:flex-row justify-center gap-4">
+
+    <!-- Take Action Now (WhatsApp Contact) -->
+    <a href="https://wa.me/233501453363?text=Hello%20Rescue%20Ghana%20team%2C%20I%20want%20to%20take%20action%20against%20Galamsey."
+      target="_blank"
+      class="bg-yellow-400 text-black px-8 py-3 font-semibold rounded-full hover:bg-yellow-500 transition transform hover:-translate-y-1 hover:shadow-2xl">
+      💬 Take Action Now
+    </a>
+
+    <!-- Take the Pledge (Form Link) -->
+    <a href="https://forms.gle/your-pledge-form-link" target="_blank"
+      class="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition transform hover:-translate-y-1 hover:shadow-2xl">
+      ✋ Take the Pledge
+    </a>
+
+    <!-- Spread Awareness (WhatsApp Share) -->
+    <a href="https://wa.me/?text=Join%20me%20in%20supporting%20the%20Rescue%20Ghana%20campaign%20to%20end%20Galamsey!%20Learn%20more%20at%20https%3A%2F%2Frescueghana.org"
+      target="_blank"
+      class="bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition transform hover:-translate-y-1 hover:shadow-2xl">
+      📢 Spread Awareness
+    </a>
+
+  </div>
+</section>
+
+
+
+  <!-- Decorative Bottom Border -->
+  <div class="absolute bottom-0 left-0 w-full h-3 bg-gradient-to-r from-green-500 via-yellow-400 to-red-600 rounded-t-full"></div>
+</section>
+
+
+  <!--  OPTIONAL: Section 9 -->
   <!-- Section: Educational Resources / Learn More -->
   <!-- (Provide external links, PDFs, or awareness materials) -->
 
 
-  <!-- ✅ Hero Fight On Galamsey -->
+  <!-- Hero Fight On Galamsey -->
   ...
 
   <!-- Footer -->
-  <footer class="bg-red-700/90 text-white text-center py-6">
-    <p>&copy; 2025 Rescue Ghana Initiative — All Rights Reserved.</p>
-  </footer>
+  <footer class="bg-black text-gray-400 text-center py-8 mt-16">
+  <p>© 2025 Rescue Ghana | All Rights Reserved</p>
+  <p class="text-sm mt-2">“Together, we can heal the land.”</p>
+</footer>
+
 
 </body>
 </html>
